@@ -1,0 +1,94 @@
+* {
+	font-family: JetBrainsMono, JetBrainsMonoNerd;
+	font-weight: bold;
+	font-size: 12px;
+	min-height: 0;
+}
+
+window#waybar {
+	background-color: @bg;
+	transition-property: background-color;
+	transition-duration: .6s;
+	border-radius: 4px;
+}
+
+@define-color bg #212121;
+@define-color fg #f9f9f9;
+@define-color black #212121;
+@define-color green #2BE491;
+@define-color gr #303030;
+
+#custom-nemo {
+	background: @black;
+	color: @fg;
+	padding: 0 6px 0 12px;
+	margin: 4px 6px;
+	border-radius: 4px;
+}
+
+#workspaces {
+	background-color: @black;
+	margin: 4px 6px;
+	border-radius: 4px;
+}
+#workspaces button {
+	background-color: @black;
+	color: @fg;	
+	padding: 0px 4px;
+	margin: 2px 6px 0px 6px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0px;
+}
+#workspaces button:hover {
+	background-color: @black;
+	color: @fg;	
+	padding: 0px 4px;
+	margin: 2px 6px 0px 6px;
+	border-bottom: solid 2px @fg;
+	border-radius: 0px;
+}
+#workspaces button.active {
+	background-color: @black;
+	color: @green;
+	padding: 0px 4px;
+	margin: 2px 6px 0px 6px;
+	border-bottom: solid 2px;
+	border-radius: 0px;
+}
+#workspaces button.empty {
+	color: @gr;
+	padding: 0px 4px;
+	margin: 2px 6px 0px 6px;
+	border-bottom: solid 2px #23252e;
+	border-radius: 0px;
+}
+
+#tray {
+	background: @black;
+	color: @fg;
+	padding: 0px 16px 0 16px;
+	margin: 4px 0 4px 0;
+	border-radius: 4px;
+}
+#pulseaudio{
+	background: @black;
+	color: @fg;
+	padding: 0px 32 0px 16px;
+	margin: 4px 0px;
+}
+#language {
+	background: @black;
+	color: @green;
+	padding: 0px;
+	margin: 4px 0px;
+	border-bottom: solid 2px @green;
+	border-radius: 0px;
+}
+#clock {
+	background: @black;
+	color: @fg;
+	padding: 0 16px 0 32px;
+	margin: 4px 12px 4px 0px;
+	border-radius: 0px 4px 4px 0px;
+	font-size: 14px;
+}
